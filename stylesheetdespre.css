@@ -103,6 +103,45 @@ h2{
 .color{
     color:#d6030a;
 }
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+ *::-webkit-scrollbar-track {
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(39 39 42);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+
+    border-radius: 10px;
+    height: 10px;
+  }
+
+
+  @media(max-width:1166px){
+    nav div{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:480px){
+    .logo>img{
+        height:50%;
+    }
+    header{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
 /* /////// */
 
 main{
@@ -135,4 +174,11 @@ main{
 
 .content>img{
     width:100%
+}
+
+@media(max-width:480px){
+    .content:before{
+       width:0;
+    }
+    
 }

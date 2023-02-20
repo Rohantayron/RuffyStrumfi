@@ -108,7 +108,47 @@ h2{
 .color{
     color:#d6030a;
 }
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+ *::-webkit-scrollbar-track {
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(39 39 42);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+
+    border-radius: 10px;
+    height: 10px;
+  }
+
+  @media(max-width:1166px){
+    nav div{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:480px){
+    .logo>img{
+        height:50%;
+    }
+    header{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 /*///////////////////////////////////////*/
+
 .introduction{
     background-color: #3ac2f2;
     border-radius: 10px;
@@ -119,12 +159,12 @@ h2{
 }
 
 main>img{
-    grid-column:3/6;
-    grid-row: 3/4;
+    grid-column:9/10;
+    grid-row: 1/2;
     width:90px;
     z-index: 1;
     position:relative;
-    bottom:80px;
+    bottom:30px;
 }
 
 .vision{
@@ -151,4 +191,24 @@ main>img{
 
 .valorile>div{
     font-size: 18px;
+}
+
+
+@media(max-width:480px){
+    .introduction{
+        grid-column:2/10;
+        margin:1em 0 0 0 ;
+    }
+    .vision{
+       margin-right: 0;
+        grid-column:2/10;
+        margin-top: 1em;
+    }
+    .valorile{
+        margin-left: 0;
+        grid-row:5/6;
+        grid-column:2/10;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
