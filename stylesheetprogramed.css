@@ -128,25 +128,7 @@ h2{
     height: 10px;
   }
 
-  @media(max-width:1166px){
-    nav div{
-        font-size: 20px;
-    }
-    .logo{
-        font-size: 25px;
-    }
-    
-}
 
-@media(max-width:480px){
-    .logo>img{
-        height:50%;
-    }
-    header{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
 /* /////////////////////// */
 
 .content{
@@ -162,8 +144,42 @@ p{
     margin-top: 2vh;
 }
 
-@media (max-width:480px){
+@media(max-width:1166px){
+    nav div{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    
+}
+
+
+@media (max-width:600px){
     .content{
         grid-column:2/10;
     }
 }
+
+/* ccccccccccccccccccccccccc */
+@media all and (max-width:600px){
+    .logo>img{
+        height:50%;
+    }
+    header{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+   
+    nav div{
+        font-size: 2vw;
+    }
+    .logo{
+        font-size: 3vw;
+    }
+    
+    .butonmain:before{
+        height:2px;
+    }  
+}
+/* ccccccccccccccccccccccccc */

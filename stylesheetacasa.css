@@ -128,24 +128,6 @@ h2{
     height: 10px;
   }
 
-  @media(max-width:1166px){
-    nav div{
-        font-size: 20px;
-    }
-    .logo{
-        font-size: 25px;
-    }
-}
-
-@media(max-width:480px){
-    .logo>img{
-        height:50%;
-    }
-    header{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
 
 /*///////////////////////////////////////*/
 
@@ -159,12 +141,12 @@ h2{
 }
 
 main>img{
-    grid-column:9/10;
-    grid-row: 1/2;
+    grid-column:3/4;
+    grid-row: 3/3;
     width:90px;
     z-index: 1;
     position:relative;
-    bottom:30px;
+    bottom:80px;
 }
 
 .vision{
@@ -194,7 +176,18 @@ main>img{
 }
 
 
-@media(max-width:480px){
+@media(max-width:1166px){
+    nav div{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+}
+
+
+
+@media all and (max-width:600px){
     .introduction{
         grid-column:2/10;
         margin:1em 0 0 0 ;
@@ -211,4 +204,32 @@ main>img{
         margin-top: 1em;
         margin-bottom: 1em;
     }
+    main>img{
+        grid-column:8/9;
+        grid-row: 1/2;
+        bottom:0;
+    }
 }
+
+/* ccccccccccccccccccccccccc */
+@media all and (max-width:600px){
+    .logo>img{
+        height:50%;
+    }
+    header{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+   
+    nav div{
+        font-size: 2vw;
+    }
+    .logo{
+        font-size: 3vw;
+    }
+    
+    .butonmain:before{
+        height:2px;
+    }  
+}
+/* ccccccccccccccccccccccccc */
