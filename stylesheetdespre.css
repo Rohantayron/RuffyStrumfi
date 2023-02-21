@@ -61,7 +61,8 @@ a{
 nav div{
     font-size: 25px;
     margin:auto 1em;
-    font-weight: bold;;
+    font-weight: bold;
+    text-align:center;
 }
 
 .butonmain{
@@ -77,6 +78,7 @@ nav div{
     color: orange;
     width:100%;
     height:4px;
+    right:0.0000001px;
 }
 
 
@@ -159,7 +161,7 @@ main{
     width:100%
 }
 
-@media(max-width:1166px){
+@media(max-width:1466px){
     nav div{
         font-size: 20px;
     }
